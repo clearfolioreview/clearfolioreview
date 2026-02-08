@@ -1,3 +1,11 @@
+:root {
+  --ink: #1F2937;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+  --bg: #FAFAFA;
+  --card: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,32 +13,36 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  color: #222;
-  background-color: #fafafa;
-  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background-color: var(--bg);
+  line-height: 1.7;
+  font-size: 16px;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 28px;
 }
 
 header {
-  border-bottom: 1px solid #e0e0e0;
-  background-color: #fff;
+  background-color: var(--card);
+  border-bottom: 1px solid var(--border);
 }
 
 header h1 {
   font-size: 28px;
-  margin-bottom: 4px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-bottom: 2px;
 }
 
 .subtitle {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 16px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 14px;
 }
 
 nav {
@@ -38,24 +50,45 @@ nav {
 }
 
 nav a {
-  color: #333;
+  color: var(--muted);
   text-decoration: none;
+  margin-right: 12px;
 }
 
 nav a:hover {
+  color: var(--ink);
   text-decoration: underline;
 }
 
 main {
-  min-height: calc(100vh - 200px);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+section + section {
+  margin-top: 40px;
 }
 
 section h2 {
-  font-size: 20px;
-  margin-bottom: 16px;
-  margin-top: 0;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: var(--border);
+  margin-top: 10px;
 }
 
 section p {
@@ -63,37 +96,35 @@ section p {
 }
 
 ul, ol {
-  margin-left: 24px;
-  margin-bottom: 16px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 ol li strong {
+  font-weight: 500;
   display: block;
-  margin-top: 12px;
   margin-bottom: 4px;
 }
 
-ol li:first-child strong {
-  margin-top: 0;
-}
-
 a {
-  color: #0066cc;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: var(--ink);
 }
 
 footer {
-  border-top: 1px solid #e0e0e0;
-  background-color: #fff;
-  font-size: 13px;
-  color: #666;
+  background-color: var(--card);
+  border-top: 1px solid var(--border);
+  font-size: 12.5px;
+  color: var(--muted);
 }
 
 footer p {
