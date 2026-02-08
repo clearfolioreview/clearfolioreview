@@ -1,0 +1,28 @@
+# ClearFolio Review
+
+ClearFolio Review is an independent, document-based review service.
+
+Purpose:
+- Provide structured, checklist-driven document review summaries
+- Clarify scope, limitations, and observations in written form
+
+Scope:
+- Document presence
+- Visible internal consistency
+- Stated validity or expiry information
+
+Limitations:
+- No compliance assessment
+- No certification or approval
+- No verification of authenticity or safety
+
+Data handling:
+- Time-bound retention
+- No reuse of documents
+- No model training on client data
+
+Website:
+https://clearfolioreview.com
+
+Contact:
+contact@clearfolioreview.com
