@@ -12,6 +12,8 @@
   box-sizing: border-box;
 }
 
+/* ================= BASE ================= */
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Helvetica, Arial, sans-serif;
@@ -34,19 +36,46 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
-.logo {
-  height: 36px;
-  display: block;
-  margin-bottom: 6px;
+/* Align logo + h1 as one unit (CSS-only, no HTML changes) */
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+/* Logo behaves like letterhead mark */
+.logo {
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* H1 kept for SEO, visually aligned with logo */
+header h1 {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 500;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+/* Group logo + h1 visually */
+header .container > img,
+header .container > h1 {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Subtitle */
 .subtitle {
   font-size: 13px;
   color: var(--muted);
-  margin-bottom: 14px;
+  margin-top: 6px;
+  margin-bottom: 12px;
 }
 
-/* ================= NAVIGATION ================= */
+/* ================= NAV ================= */
 
 nav {
   font-size: 14px;
@@ -63,7 +92,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ================= MAIN CONTENT ================= */
+/* ================= MAIN ================= */
 
 main {
   padding-top: 48px;
@@ -99,6 +128,8 @@ section h2::after {
 section p {
   margin-bottom: 16px;
 }
+
+/* ================= LISTS ================= */
 
 ul, ol {
   margin-left: 20px;
