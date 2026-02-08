@@ -27,15 +27,17 @@ body {
   padding: 28px;
 }
 
+/* ================= HEADER ================= */
+
 header {
   background-color: var(--card);
   border-bottom: 1px solid var(--border);
 }
 
-header h1 {
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 2px;
+.logo {
+  height: 36px;
+  display: block;
+  margin-bottom: 6px;
 }
 
 .subtitle {
@@ -43,6 +45,8 @@ header h1 {
   color: var(--muted);
   margin-bottom: 14px;
 }
+
+/* ================= NAVIGATION ================= */
 
 nav {
   font-size: 14px;
@@ -58,6 +62,8 @@ nav a:hover {
   color: var(--ink);
   text-decoration: underline;
 }
+
+/* ================= MAIN CONTENT ================= */
 
 main {
   padding-top: 48px;
@@ -109,6 +115,8 @@ ol li strong {
   margin-bottom: 4px;
 }
 
+/* ================= LINKS ================= */
+
 a {
   color: var(--ink);
   text-decoration: underline;
@@ -118,6 +126,8 @@ a {
 a:hover {
   text-decoration-color: var(--ink);
 }
+
+/* ================= FOOTER ================= */
 
 footer {
   background-color: var(--card);
@@ -129,4 +139,3 @@ footer {
 footer p {
   margin-bottom: 4px;
 }
-
